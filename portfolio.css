@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+header{
+    position:fixed;
+    top:16px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background-color:black;
+    backdrop-filter: blur(8px);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 48px;
+    z-index: 1000;
+}
+.logo{
+    color: white;
+    font-size: 20.8px;
+    font-weight: 600;
+    text-wrap: wrap;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.nav-links{
+    display: flex;
+    gap: 32px;
+}
+li a{
+    position: relative;
+    color: white;
+    font-weight: 300;
+}
+li a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius:16px ;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, aqua,rgb(251, 192, 255));
+}
+li a:hover::before{
+    width:100%;
+}
+.visit-btn {
+    padding: 12.8px 24px;
+    border-radius: 48px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, aqua,rgb(251, 192, 255));
+}
+.visit-btn:hover{
+    background: linear-gradient(to right,rgb(251, 192, 255), aqua);
+    transform: scale(1.03);
+}
+#menu-icon{
+    font-size:32px;
+    display: none;
+}
