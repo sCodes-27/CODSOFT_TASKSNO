@@ -76,3 +76,116 @@ li a:hover::before{
     font-size:32px;
     display: none;
 }
+section{
+    min-height: 100vh;
+    padding: 128px 12%;
+    width : 100%;
+    position : relative;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+}
+.about img{
+    width: 30vw;
+    border-radius: 50%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.info-box h3{
+    font-size: 28.8px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.info-box h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.info-box span{
+    background: linear-gradient(to right,rgb(251, 192, 255), aqua);
+    background-clip: text;
+    color: transparent;
+    font-size: 32px;
+}
+.btn-group{
+    display: flex;
+    gap: 16px;
+}
+.btn{
+    border-radius: 48px;
+    padding: 8px 24px;
+    border: 2px solid black;
+    cursor:pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.socials{
+    display: flex;
+    gap:32px;
+}
+socials i{
+    font-size:40px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.socials i:hover{
+    transform: scale(1.1);
+}
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:32px;
+}
+.project-card{
+    display:flex;
+    padding:48px 32px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:24px;
+    border:2px solid black;
+    border-radius:48px;
+    cursor:pointer;
+    transition:0.3s ease-in-out;
+}
+.project-card:hover{
+    background-color:black;
+    color:white;
+    transform:translate(-10px) scale(1.02);
+}
+.project-card img{
+    width:100vw;
+    border-radius:16px;
+}
+.project-btn:hover .btn{
+    border:2px solid white;
+    color:white;
+}
+.project-card:hover .btn:hover{
+    border:2px solid black;
+    background-color:white;
+    color:black;
+}
+.project-card h3{
+    font-size:32px;
+    font-weight: 500;
+}
