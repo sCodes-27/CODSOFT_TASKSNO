@@ -189,33 +189,41 @@ socials i{
     font-size:32px;
     font-weight: 500;
 }
-.input-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Skills-container{
+    display: flex;;
+    flex-direction:row;
+    gap:30px;
     justify-content:center;
-    text-align: center;
-    gap:32px;
-    margin-top: 80px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width:100%;
 }
-.input-box input{
-    border-radius: 48px;
-    border: 2px solid black;
-    padding: 32px 128px;
-    font-size: 48px;
+.Skills-card{
+    width:300px;
+    height:380px;
+    box-sizing: border-box;
+    overflow:hidden;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:24px;
+    border:2px solid black;
+    border-radius:48px;
+    cursor:pointer;
+    transition:0.3s ease-in-out;
 }
-.input-box input::placeholder{
-    font-size: 48px;
+.Skill-card img{
+    width:220px;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    max-width: 100%;
 }
-.input{
-    position:relative;
-}
-.input i{
-    position: absolute;
-    font-size: 64px;
-    top:50%;
-    left:50px;
-    transform: translate(50%,-50%);
+.Skills-card h3{
+    margin:0;
 }
 footer{
     bottom:0;
