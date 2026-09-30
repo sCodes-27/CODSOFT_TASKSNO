@@ -221,7 +221,7 @@ socials i{
     cursor:pointer;
     transition:0.3s ease-in-out;
 }
-.Skill-card img{
+.Skills-card img{
     width:220px;
     height:220px;
     object-fit:contain;
