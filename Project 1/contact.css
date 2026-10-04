@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+.Contact-container {
+    width: 90%;
+    max-width: 650px;
+    padding: 50px 45px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease-in-out;
+}
+.Contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        0 0 25px rgba(0, 0, 0, 0.15);
+}
+.Contact-container h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.Contact-container > p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 35px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.input-box label {
+    font-size: 16px;
+    font-weight: 600;
+}
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 15px 18px;
+    font-size: 16px;
+    font-family: inherit;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+.input-box input:focus,
+.input-box textarea:focus {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+    transform: scale(1.01);
+}
+.input-box textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color: #888;
+}
+button {
+    align-self: center;
+    padding: 12px 35px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 600px) {
+
+    .Contact-container {
+        width: 92%;
+
+        padding: 35px 25px;
+
+        border-radius: 25px;
+    }
+
+    .Contact-container h1 {
+        font-size: 32px;
+    }
+
+    .Contact-container > p {
+        font-size: 15px;
+    }
+
+    .input-box input,
+    .input-box textarea {
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
