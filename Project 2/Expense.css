@@ -28,5 +28,29 @@ body{
     align-items:center;
 }
 .dropdown{
-    
+    border:1px solid rgb(27, 41, 43);
+    border-radius:8px;
+    padding:8px 12px;
+    font-size:12px;
+    cursor:pointer;
+}
+.date-picker{
+    border:1px solid rgb(27, 41, 43);
+    border-radius:8px;
+    padding:8px 12px;
+    font-size:12px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    gap:12px;
+}
+.export-btn{
+    border:1px solid rgb(27, 41, 43);
+    border-radius:8px;
+    padding:8px 12px;
+    font-size:12px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    gap:12px;
 }
