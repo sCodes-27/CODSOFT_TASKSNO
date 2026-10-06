@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="StyleSheet" href="Expense.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Expense Tracker Website</title>
 </head>
 <body>
@@ -11,7 +12,8 @@
         <h1>Hey! Welcome to the Expense Tracker</h1>
         <div class="header-controls">
             <div class="dropdown">
-                Daily<i class="fa-regular fa-chevron-down"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                Daily
             </div>
             <div class="date-picker">
                 <i class="fa-sharp-duotone fa-solid fa-calendar-days"></i>
@@ -22,7 +24,20 @@
                 Export
             </div>       
          </div>
-         
+
+         <div class="main-content">
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3 class="card-title">Monthly Income</h3>
+                    <button class="card-menu"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+                <div class="amount income-amount">
+                    <i class="fa-regular fa-indian-rupee-sign"></i>
+                    <span>1,50,000</span>
+                </div>
+            </div>
+         </div>
+
     
 </body>
 </html>
